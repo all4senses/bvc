@@ -1753,7 +1753,7 @@ function bvc_misc_flush_caches() {
   // Uncomment in case of changing any js on the site.
   
   /* // No need to delete files as they are deleted on rebuilding after bvc_minified_js variable reset.
-  $dir = 'sites/default/files/jsmin-bvc';
+  $dir = 'f/jsmin-bvc';
   $objects = scandir($dir);
   foreach ($objects as $object) {
     if ($object != "." && $object != "..") {
@@ -2193,7 +2193,7 @@ function bvc_misc_js_alter(&$javascript) {
 //                $minOutput = preg_replace('/\/\*.*?\*\//s', '', $minOutput);
 //              }
               
-              $target_path_short = 'sites/default/files/jsmin-bvc/' . str_replace('/', '-', $source_fpath_short);
+              $target_path_short = 'f/jsmin-bvc/' . str_replace('/', '-', $source_fpath_short);
               if (file_put_contents(DRUPAL_ROOT . '/' . $target_path_short, $minOutput)) {
                 $bvc_minified_js[$filename] = $target_path_short;
                 $javascript[$filename]['data'] = $bvc_minified_js[$filename];
