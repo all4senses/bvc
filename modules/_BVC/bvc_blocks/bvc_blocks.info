@@ -1,0 +1,6 @@
+name = BVC Blocks
+package = BVC
+description = "Defines different blocks for the site"
+core = 7.x
+tags[] = BVC
+files[] = bvc_blocks.module

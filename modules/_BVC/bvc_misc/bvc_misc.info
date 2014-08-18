@@ -1,0 +1,6 @@
+name = BVC Misc
+package = BVC
+description = "Miscelanious helper functions and hooks implementations"
+core = 7.x
+tags[] = BVC
+files[] = bvc_misc.module

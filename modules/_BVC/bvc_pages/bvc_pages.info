@@ -1,0 +1,6 @@
+name = BVC Pages
+package = BVC
+description = "Various functions and forms for pages"
+core = 7.x
+tags[] = BVC
+files[] = bvc_pages.module
