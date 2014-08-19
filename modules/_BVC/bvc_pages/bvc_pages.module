@@ -2023,9 +2023,9 @@ function bvc_pages_buildHome($name, $data) {
 //  }
   
     
-  $seo_welcome_node = bvc_misc_getPrefaceByKey('front');
-  $seo_welcome_node->title_no_link = TRUE;
-  $seo_welcome_node_view = node_view($seo_welcome_node, 'full');
+//  $seo_welcome_node = bvc_misc_getPrefaceByKey('front');
+//  $seo_welcome_node->title_no_link = TRUE;
+//  $seo_welcome_node_view = node_view($seo_welcome_node, 'full');
 
   // hide it here because we show thr main home preface content via the highlighted refion block.
   //$out .= render($seo_welcome_node_view);
