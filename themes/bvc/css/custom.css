@@ -3315,7 +3315,7 @@ a.yt-direct:active{outline: none;}
 .specs .reviews a:hover {border-bottom: 1px solid #478AFD;}
 
 /*.specs .visit a {width: 67px; height: 22px; background: url("images/sprite-04.png") no-repeat -91px -1186px transparent; color: white; display: block; margin: auto; font-size: 11px; padding: 5px 20px 1px 0; font-weight: bold;}*/
-/*.specs .visit a {width: 93px; height: 29px; background: url("/images/theme/sprite-04.png") no-repeat -141px -1224px transparent; display: block; margin: auto; text-indent: -9999px;}*/
+/*.specs .visit a {width: 93px; height: 29px; background: url("/sites/all/themes/bvc/css/images/sprite-04.png") no-repeat -141px -1224px transparent; display: block; margin: auto; text-indent: -9999px;}*/
 .specs .visit a {font-size: 15px; font-family: raleway; font-weight: 600; color: white; background: #e20202; width: 100px; display: block; margin: auto; height: 20px; padding: 5px 0 6px; border-radius: 2px;}
 
 .specs .logos .back a{padding: 4px 0 0px 18px; text-indent: 20px !important;}
@@ -3718,7 +3718,7 @@ img {max-width: 100%;}
 #about_author .social {overflow: hidden; margin-top: 10px;}
 #about_author .social a {width: 32px; height: 30px; display: inline-block; margin-right: 2px;}
 #about_author #gplus {background: url(/sites/all/themes/bvc/css/images/sprite-04.png) no-repeat -208px -1373px transparent;}
-#about_author #ln {background: url(/images/theme/sprite-04.png) no-repeat -179px -1413px transparent;}
+#about_author #ln {background: url(/sites/all/themes/bvc/css/images/sprite-04.png) no-repeat -179px -1413px transparent;}
 #about_author #tw {background: url(/sites/all/themes/bvc/css/images/sprite-04.png) no-repeat -173px -1373px transparent;}
 #about_author #fb {background: url(/sites/all/themes/bvc/css/images/sprite-04.png) no-repeat -137px -1373px transparent;}
 /*#about_author #right {text-align: right;}*/

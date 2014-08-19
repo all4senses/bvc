@@ -801,7 +801,7 @@ border-bottom-right-radius: 0;
 /*.node-type-quote #v4 #requestQuoteFormWrapper #Navigation #next{background: url(/sites/all/themes/bvc/css/images/lp-sprite-1.png) no-repeat -3px -45px transparent; border: medium none; height: 48px; width: 235px; text-indent: -999px; box-shadow: none;}*/
 
 /*.node-type-quote #v4 #requestQuoteFormWrapper #Navigation #next{background: url(/sites/all/themes/bvc/css/images/lp-sprite-1.png) no-repeat -3px -152px transparent; border: medium none; height: 48px; width: 235px; box-shadow: none; font-weight: normal; padding: 0 0 0 35px;}*/
-.node-type-quote #v4 #requestQuoteFormWrapper #Navigation #next {background: url(/images/theme/lp-sprite-1.png) no-repeat 0px -355px transparent; border: medium none; height: 48px; width: 275px; box-shadow: none; text-indent: -9999px;}
+.node-type-quote #v4 #requestQuoteFormWrapper #Navigation #next {background: url(/sites/all/themes/bvc/css/images/lp-sprite-1.png) no-repeat 0px -355px transparent; border: medium none; height: 48px; width: 275px; box-shadow: none; text-indent: -9999px;}
 
 .node-type-quote #v4 #requestQuoteFormWrapper label.error{font-size: 10px; font-weight: normal; left: 10px; padding: 0; bottom: /*6px*/7px; margin: 0; background: white; width: 210px; overflow: hidden;}
 
@@ -1269,7 +1269,7 @@ border-bottom-right-radius: 0;
 /*.node-type-quote #v6 #requestQuoteFormWrapper #Navigation #next{background: url(/sites/all/themes/bvc/css/images/lp-sprite-1.png) no-repeat -3px -45px transparent; border: medium none; height: 48px; width: 235px; text-indent: -999px; box-shadow: none;}*/
 
 /*.node-type-quote #v6 #requestQuoteFormWrapper #Navigation #next{background: url(/sites/all/themes/bvc/css/images/lp-sprite-1.png) no-repeat -3px -152px transparent; border: medium none; height: 48px; width: 235px; box-shadow: none; font-weight: normal; padding: 0 0 0 35px;}*/
-.node-type-quote #v6 #requestQuoteFormWrapper #Navigation #next {background: url(/images/theme/lp-sprite-1.png) no-repeat 0px -355px transparent; border: medium none; height: 48px; width: 275px; box-shadow: none; text-indent: -9999px;}
+.node-type-quote #v6 #requestQuoteFormWrapper #Navigation #next {background: url(/sites/all/themes/bvc/css/images/lp-sprite-1.png) no-repeat 0px -355px transparent; border: medium none; height: 48px; width: 275px; box-shadow: none; text-indent: -9999px;}
 
 .node-type-quote #v6 #requestQuoteFormWrapper label.error{font-size: 10px; font-weight: normal; left: 10px; padding: 0; bottom: /*6px*/7px; margin: 0; background: white; width: 210px; overflow: hidden;}
 
@@ -1397,13 +1397,13 @@ body.quote-page.v7 .messages{width: 980px; margin: auto; position: relative;}
 .node-type-quote #v7 .quotes .group {float: left; margin: 0 20px;}
 
 .node-type-quote #v7 .quotes .text {font-size: 15px; text-align: left; width: 520px; float: left; margin-left: 50px; font-family: 'open sans';}
-.node-type-quote #v7 .quotes .text span{background: url(/images/theme/lp-sprite-1.png) no-repeat -40px -109px transparent; width: 40px; height: 30px; display: inline-block;}
-/*.node-type-quote #v7 .quotes .text div {background: url(/images/theme/lp-sprite-1.png) no-repeat -81px -115px transparent; width: 40px; height: 30px; position: absolute; top: 145px; left: 350px;}*/
-.node-type-quote #v7 .quotes .text div {background: url(/images/theme/lp-sprite-1.png) no-repeat -81px -95px transparent; width: 40px; height: 50px; display: inline-block; position: relative; top: 26px; margin: -34px 0 0 0;}
+.node-type-quote #v7 .quotes .text span{background: url(/sites/all/themes/bvc/css/images/lp-sprite-1.png) no-repeat -40px -109px transparent; width: 40px; height: 30px; display: inline-block;}
+/*.node-type-quote #v7 .quotes .text div {background: url(/sites/all/themes/bvc/css/images/lp-sprite-1.png) no-repeat -81px -115px transparent; width: 40px; height: 30px; position: absolute; top: 145px; left: 350px;}*/
+.node-type-quote #v7 .quotes .text div {background: url(/sites/all/themes/bvc/css/images/lp-sprite-1.png) no-repeat -81px -95px transparent; width: 40px; height: 50px; display: inline-block; position: relative; top: 26px; margin: -34px 0 0 0;}
 
 .node-type-quote #v7 .quotes .source{font-size: 15px; font-weight: bold; margin: 10px 0 0 10px; color: #2a82c5; float: left; text-align: left; width: 360px;}
 
-.node-type-quote #v7 .quotes .source span {background: url(/images/theme/lp-sprite-1.png) no-repeat 0px -465px transparent; width: 103px; height: 105px; float: left; margin-right: 10px;}
+.node-type-quote #v7 .quotes .source span {background: url(/sites/all/themes/bvc/css/images/lp-sprite-1.png) no-repeat 0px -465px transparent; width: 103px; height: 105px; float: left; margin-right: 10px;}
 .node-type-quote #v7 .quotes .source div {color: #656565; margin: 30px 0 0 10px; font-size: 23px; line-height: 25px;}
 
 /*.node-type-quote #v7 h1 {background: none; font-size: 22px; margin: 0 0 10px; padding: 0; position: static; text-align: center; font-family: arial; font-weight: bold; line-height: 35px;}*/
@@ -1432,7 +1432,7 @@ body.quote-page.v7 .messages{width: 980px; margin: auto; position: relative;}
 .node-type-quote #v7 .content .left .text-2{ color: blue; font-size: 11px; text-align: center;}
 .node-type-quote #v7 .content .left .text-3{color: gray; font-size: 11px; text-align: center;}
 
-.node-type-quote #v7 .right {padding: 10px 5px 0 5px; width: 440px; height: 400px; overflow: hidden; position: absolute; left: 7px; top: 165px; background: url(/images/theme/lp7-quote-back.png); border-radius: 7px;}
+.node-type-quote #v7 .right {padding: 10px 5px 0 5px; width: 440px; height: 400px; overflow: hidden; position: absolute; left: 7px; top: 165px; background: url(/sites/all/themes/bvc/css/images/lp7-quote-back.png); border-radius: 7px;}
 .node-type-quote #v7 .right h3 {font-family: arial;  text-align: center; font-size: /*24*/26px; margin: 8px 0 15px 0; line-height: 30px; color: #565656; font-weight: bold;}
 .node-type-quote #v7 .right h3 span {display: block; font-size: 19px; position: relative; top: 4px; font-style: italic;}
 /*.node-type-quote #v7 .right h3 span {display: block; font-size: 14px; position: relative; top: 4px; color: white; font-weight: normal; line-height: 10px;}*/
@@ -1518,16 +1518,16 @@ border-bottom-right-radius: 0;
 .node-type-quote #v7 .left .ps{color: black; font-size: 13px; margin: 30px 0 0 51px;}
 .node-type-quote #v7 .left .ps span{color: black;}
 
-.node-type-quote #v7 #pdf-icon {width: 40px; height: 40px; background: url(/images/theme/lp-sprite-1.png) no-repeat transparent -290px -370px; float: left;}
+.node-type-quote #v7 #pdf-icon {width: 40px; height: 40px; background: url(/sites/all/themes/bvc/css/images/lp-sprite-1.png) no-repeat transparent -290px -370px; float: left;}
 
 .node-type-quote #v7 #requestQuoteFormWrapper #Navigation{position: static; margin: auto; width: 380px;}
 /*.node-type-quote #v7 #requestQuoteFormWrapper #Navigation #next{background: url(/sites/all/themes/bvc/css/images/lp-sprite-1.png) no-repeat -3px -45px transparent; border: medium none; height: 48px; width: 235px; text-indent: -999px; box-shadow: none;}*/
 
 /*.node-type-quote #v7 #requestQuoteFormWrapper #Navigation #next{background: url(/sites/all/themes/bvc/css/images/lp-sprite-1.png) no-repeat -3px -152px transparent; border: medium none; height: 48px; width: 235px; box-shadow: none; font-weight: normal; padding: 0 0 0 35px;}*/
 
-/*.node-type-quote #v7 #requestQuoteFormWrapper #Navigation #next {background: url(/images/theme/lp-sprite-1.png) no-repeat 3px -412px transparent; background: url(/images/theme/lp-sprite-1.png) no-repeat 3px -577px transparent; border: medium none; height: 45px; width: 380px; box-shadow: none; text-indent: -9999px; left: 0; margin: -3px 0 0 0; border-radius: 7px;}*/
-/*.node-type-quote #v7 #requestQuoteFormWrapper #Navigation #next {background: url(/images/theme/lp-sprite-1.png?1) no-repeat 3px -626px transparent; border: medium none; height: 45px; width: 380px; box-shadow: none; left: 0; margin: -3px 0 0 0; border-radius: 7px; text-transform: uppercase; text-align: center; font-size: 24px; padding: 0 0 1px 0; text-indent: -9999px;}*/
-.node-type-quote #v7 #requestQuoteFormWrapper #Navigation #next {background: url(/images/theme/lp-sprite-1.png?1) no-repeat 2px -685px transparent; border: medium none; height: 60px; width: 385px; box-shadow: none; left: 0; margin: -3px 0 0 0; border-radius: 0; text-transform: uppercase; text-align: center; font-size: 24px; padding: 0 0 1px 1px; text-indent: -9999px;}
+/*.node-type-quote #v7 #requestQuoteFormWrapper #Navigation #next {background: url(/sites/all/themes/bvc/css/images/lp-sprite-1.png) no-repeat 3px -412px transparent; background: url(/sites/all/themes/bvc/css/images/lp-sprite-1.png) no-repeat 3px -577px transparent; border: medium none; height: 45px; width: 380px; box-shadow: none; text-indent: -9999px; left: 0; margin: -3px 0 0 0; border-radius: 7px;}*/
+/*.node-type-quote #v7 #requestQuoteFormWrapper #Navigation #next {background: url(/sites/all/themes/bvc/css/images/lp-sprite-1.png?1) no-repeat 3px -626px transparent; border: medium none; height: 45px; width: 380px; box-shadow: none; left: 0; margin: -3px 0 0 0; border-radius: 7px; text-transform: uppercase; text-align: center; font-size: 24px; padding: 0 0 1px 0; text-indent: -9999px;}*/
+.node-type-quote #v7 #requestQuoteFormWrapper #Navigation #next {background: url(/sites/all/themes/bvc/css/images/lp-sprite-1.png?1) no-repeat 2px -685px transparent; border: medium none; height: 60px; width: 385px; box-shadow: none; left: 0; margin: -3px 0 0 0; border-radius: 0; text-transform: uppercase; text-align: center; font-size: 24px; padding: 0 0 1px 1px; text-indent: -9999px;}
 
 .node-type-quote #v7 #requestQuoteFormWrapper label.error{font-size: 10px; font-weight: normal; left: 10px; padding: 0; bottom: /*6px*/7px; margin: 0; background: lavender; width: 375px; overflow: hidden;}
 
@@ -1562,7 +1562,7 @@ border-bottom-right-radius: 0;
 .node-type-quote #v7 #bottom .text div{line-height: 18px; font-size: 13px;/* text-align: center;*/}
 
 /* Bottom text icons */
-.node-type-quote #v7 #bottom .text span {background: url(/images/theme/lp-sprite-1.png) no-repeat -285px -250px; width: 60px; height: 50px; display: block; margin: 0 auto 10px;}
+.node-type-quote #v7 #bottom .text span {background: url(/sites/all/themes/bvc/css/images/lp-sprite-1.png) no-repeat -285px -250px; width: 60px; height: 50px; display: block; margin: 0 auto 10px;}
 .node-type-quote #v7 #bottom .text.last span {background-position: -285px -310px;}
 .node-type-quote #v7 #bottom .text.first span {background-position: -290px -190px;}
 
