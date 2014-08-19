@@ -208,7 +208,8 @@ function bvc_blocks_block_info() {
   
   
   
-  // Aquire blocks for all prefaces with defined bottoms.
+  // Aquire blocks with bottom for all prefaces with defined bottoms.
+  /*
   $query = db_select('node', 'n');
   $query->leftJoin('field_data_field_preface_bottom', 'pb', 'pb.entity_id = n.nid');
   $query->fields('pb', array('entity_id'));
@@ -230,6 +231,7 @@ function bvc_blocks_block_info() {
     );
   
   }
+  */
   
   // Topics block for different content types.
   /*
@@ -464,7 +466,8 @@ function bvc_blocks_block_view($delta = '') {
     
     default:
       
-      // Aquire blocks for all prefaces with defined bottoms.
+      // Aquire blocks with bottoms for all prefaces with defined bottoms.
+      /*
       $prefaces_v_bottoms = unserialize(variable_get('bvc_prefaces_w_bottoms'));
       foreach ($prefaces_v_bottoms as $prefaces_v_bottom) {
 
@@ -474,7 +477,7 @@ function bvc_blocks_block_view($delta = '') {
         }
         
       }
-      
+      */
       
       // Get blocks for topics for a specific content type.
       /*
