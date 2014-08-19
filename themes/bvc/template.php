@@ -788,8 +788,9 @@ function bvc_process_page(&$variables) {
   //drupal_add_js( $module_path_misc . '/js/bvc_add_adroll.js'); 
   //drupal_add_js( $module_path_misc . '/js/bvc_add_fb.js'); 
   
-  dpm($_SERVER);
-  dpm($_GET);
+  //dpm($_SERVER);
+  //dpm($_GET);
+  
   $pages_with_livechatinc = array(/*'/', */ /*'/business',*/ '/hosted-pbx', '/business-systems', '/sip-trunking');
   if (in_array(@$_SERVER['REQUEST_URI'], $pages_with_livechatinc)) {
     //dpm('REQUEST_URI = ' . @$_SERVER['REQUEST_URI']);
