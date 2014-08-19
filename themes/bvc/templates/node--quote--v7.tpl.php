@@ -56,7 +56,7 @@
               
               <img id="q-image" src="/sites/all/themes/bvc/css/images/lp7-phone.png" />
               
-              <div class="content<?php echo ($_SERVER['REDIRECT_URL'] == '/service-quotes-final' ? ' final' : '')?>"<?php print $content_attributes; ?>>
+              <div class="content<?php echo ($_SERVER['REQUEST_URI'] == '/service-quotes-final' ? ' final' : '')?>"<?php print $content_attributes; ?>>
 
                     <div class="left">
                             
@@ -124,7 +124,7 @@
           
           
 
-              <?php if ($_SERVER['REDIRECT_URL'] == '/service-quotes-final'): ?>
+              <?php if ($_SERVER['REQUEST_URI'] == '/service-quotes-final'): ?>
 
                   <div class="right final">
                     <?php  
@@ -270,7 +270,7 @@
 
 
 
-<?php if ($_SERVER['REDIRECT_URL'] == '/service-quotes-final'): /* If we are on the final page, after the submission */ ?> 
+<?php if ($_SERVER['REQUEST_URI'] == '/service-quotes-final'): /* If we are on the final page, after the submission */ ?> 
 
           <?php /*if ($_SERVER['HTTP_REFERER'] == 'http://businessvoipcenter.com/service-quotes'):*/  /* If we get the final page from the main quote page, what is correct.*/ ?> 
             
@@ -338,7 +338,7 @@
             <script>top.location.href="http://businessvoipcenter.com/service-quotes";</script>
           <?php endif;*/?>
     
-<?php else: // Else of if ($_SERVER['REDIRECT_URL'] == '/service-quotes-final'):
+<?php else: // Else of if ($_SERVER['REQUEST_URI'] == '/service-quotes-final'):
 // So we are on the lending page '/service-quotes' 
 ?>
     
@@ -361,7 +361,7 @@
   </noscript>
   
   
-<?php endif; // End of Else of if ($_SERVER['REDIRECT_URL'] == '/service-quotes-final'):?>
+<?php endif; // End of Else of if ($_SERVER['REQUEST_URI'] == '/service-quotes-final'):?>
   
 
   <script src="//cdn.optimizely.com/js/786756874.js"></script>
