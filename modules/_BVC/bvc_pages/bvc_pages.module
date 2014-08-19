@@ -2716,13 +2716,13 @@ function bvc_pages_form_alter(&$form, &$form_state, $form_id) {
 
                 // Add stars widgets to a Rating block
                 $module_path . '/js/bvc_phone_review_stars.js',
-                'sites/all/libraries/jquery.ui.stars/jquery.ui.stars.min.js',
+                'sites/all/libraries/jquery.plugins/jquery.ui.stars/jquery.ui.stars.min.js',
               );
 
               $form['#attached']['library'][] = array('system', 'ui.widget');
 
               $form['#attached']['css'] = array(
-                'sites/all/libraries/jquery.ui.stars/css/jquery.ui.stars.css',
+                'sites/all/libraries/jquery.plugins/jquery.ui.stars/css/jquery.ui.stars.css',
               );
 
 
@@ -3403,13 +3403,13 @@ function bvc_pages_form_alter(&$form, &$form_state, $form_id) {
 //
 //            // Add stars widgets to a Rating block
 //            $module_path . '/js/vn_review_stars.js',
-//            'sites/all/libraries/jquery.ui.stars/jquery.ui.stars.min.js',
+//            'sites/all/libraries/jquery.plugins/jquery.ui.stars/jquery.ui.stars.min.js',
 //          );
 //
 //          $form['#attached']['library'][] = array('system', 'ui.widget');
 //
 //          $form['#attached']['css'] = array(
-//            'sites/all/libraries/jquery.ui.stars/css/jquery.ui.stars.css',
+//            'sites/all/libraries/jquery.plugins/jquery.ui.stars/css/jquery.ui.stars.css',
 //          );
 
           
@@ -4022,13 +4022,13 @@ function bvc_pages_form_alter(&$form, &$form_state, $form_id) {
 
         // Add stars widgets to a Rating block
         $module_path . '/js/bvc_phone_review_stars.js',
-        'sites/all/libraries/jquery.ui.stars/jquery.ui.stars.min.js',
+        'sites/all/libraries/jquery.plugins/jquery.ui.stars/jquery.ui.stars.min.js',
       );
 
       $form['#attached']['library'][] = array('system', 'ui.widget');
 
       $form['#attached']['css'] = array(
-        'sites/all/libraries/jquery.ui.stars/css/jquery.ui.stars.css',
+        'sites/all/libraries/jquery.plugins/jquery.ui.stars/css/jquery.ui.stars.css',
       );
 
       
@@ -4805,7 +4805,7 @@ function bvc_page_alterSubmitReviewPage_v2(&$form) {
 
         // Add stars widgets to a Rating block
         $module_path . '/js/bvc_review_stars.js',
-        'sites/all/libraries/jquery.ui.stars/jquery.ui.stars.min.js',
+        'sites/all/libraries/jquery.plugins/jquery.ui.stars/jquery.ui.stars.min.js',
       );
 
       
@@ -4824,7 +4824,7 @@ function bvc_page_alterSubmitReviewPage_v2(&$form) {
       //$form['#attached']['library'][] = array('system', 'ui.selectmenu');
 
       $form['#attached']['css'] = array(
-        'sites/all/libraries/jquery.ui.stars/css/jquery.ui.stars.css',
+        'sites/all/libraries/jquery.plugins/jquery.ui.stars/css/jquery.ui.stars.css',
       );
 
       
@@ -5461,13 +5461,13 @@ function bvc_page_alterSubmitReviewPage_v1(&$form) {
 
         // Add stars widgets to a Rating block
         $module_path . '/js/bvc_review_stars.js',
-        'sites/all/libraries/jquery.ui.stars/jquery.ui.stars.min.js',
+        'sites/all/libraries/jquery.plugins/jquery.ui.stars/jquery.ui.stars.min.js',
       );
 
       $form['#attached']['library'][] = array('system', 'ui.widget');
 
       $form['#attached']['css'] = array(
-        'sites/all/libraries/jquery.ui.stars/css/jquery.ui.stars.css',
+        'sites/all/libraries/jquery.plugins/jquery.ui.stars/css/jquery.ui.stars.css',
       );
 
       
@@ -8680,13 +8680,13 @@ function bvc_pages_addPhoneReview_form($form, &$form_state, $node) {
 
     // Add stars widgets to a Rating block
     $module_path . '/js/bvc_phone_review_stars.js',
-    'sites/all/libraries/jquery.ui.stars/jquery.ui.stars.min.js',
+    'sites/all/libraries/jquery.plugins/jquery.ui.stars/jquery.ui.stars.min.js',
   );
 
   $form['#attached']['library'][] = array('system', 'ui.widget');
 
   $form['#attached']['css'] = array(
-    'sites/all/libraries/jquery.ui.stars/css/jquery.ui.stars.css',
+    'sites/all/libraries/jquery.plugins/jquery.ui.stars/css/jquery.ui.stars.css',
   );
 
   // Use defined styles for reviews.
