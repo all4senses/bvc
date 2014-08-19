@@ -24,7 +24,7 @@
 
           <div id="bvc-logo">
             <?php 
-              echo '<div class="logo"><img src="/images/theme/get-voip-logo5.png" alt="businessvoipcenter.com" title="businessvoipcenter.com" /></div>'; 
+              echo '<div class="logo"><img src="/sites/all/themes/bvc/css/images/get-voip-logo5.png" alt="businessvoipcenter.com" title="businessvoipcenter.com" /></div>'; 
             ?>
             <!--<div class="ps"><span>Over 100,000 Quotes Delivered</span> Average business savings of $240/mo</div> -->
             
@@ -48,13 +48,13 @@
 
 
       <div class="full main">
-        <img src="/images/theme/lp7-back.jpg" style="position: absolute;">
+        <img src="/sites/all/themes/bvc/css/images/lp7-back.jpg" style="position: absolute;">
         <div id="main-content">
 
               <h2><span>Save Up To 65%</span> on a Better<br/> Business Phone Solution!</h2>
               <h4>No contracts or set-up fees</h4>
               
-              <img id="q-image" src="/images/theme/lp7-phone.png" />
+              <img id="q-image" src="/sites/all/themes/bvc/css/images/lp7-phone.png" />
               
               <div class="content<?php echo ($_SERVER['REDIRECT_URL'] == '/service-quotes-final' ? ' final' : '')?>"<?php print $content_attributes; ?>>
 
@@ -204,7 +204,7 @@
                   echo '</ul>';
                 }
                 */
-                echo '<img src="/images/theme/lp-slider-logos-v7.png" alt="Supported by Major VoIP Brands" />';
+                echo '<img src="/sites/all/themes/bvc/css/images/lp-slider-logos-v7.png" alt="Supported by Major VoIP Brands" />';
 
             ?>
 
