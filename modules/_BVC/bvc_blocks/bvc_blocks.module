@@ -2865,7 +2865,7 @@ function bvc_blocks_getAdBlock($ad_name) {
     case 'speedtest_page':
       //return '<a href="/voip-speed-test"><div title="VoIP Speed Test Tool" ></div></a>';
       return '<a href="/speed-test-tool"><div title="VoIP Speed Test Tool" ></div></a>';
-      ////'<img alt="VoIP Speed Test Tool" title="VoIP Speed Test Tool" src="/sites/default/files/speedtestbanner.png" />'
+      ////'<img alt="VoIP Speed Test Tool" title="VoIP Speed Test Tool" src="/f/speedtestbanner.png" />'
 
   }
 }

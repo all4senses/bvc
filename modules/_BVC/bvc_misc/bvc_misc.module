@@ -1080,7 +1080,7 @@ function bvc_misc_testPage() {
   
   
   /*
-  $output = 'sites/default/files/yyy/xxx.png, sites/default/files/zzz.png';
+  $output = 'f/yyy/xxx.png, f/zzz.png';
   // $body_full_markup = preg_replace('/<img[^>]+>/i', '', $body_full_markup);
   $output = preg_replace('|sites\/default\/files\/([^\/]*\.)|s', 'images/content/all/$1', $output);
   dpm($output);
@@ -1171,7 +1171,7 @@ function bvc_misc_testPage() {
 //  $file_local = $default_file_path . '/temp/aaa_' . $key_0 . '.jpg';
 //  $file_local_abs = DRUPAL_ROOT . '/' . $file_local;
   
-  $image_styled_url = 'sites/default/files/styles/as_featured_in_sideblock/public/a/polycom-logo-h-cmyk_highres.jpg';
+  $image_styled_url = 'f/styles/as_featured_in_sideblock/public/a/polycom-logo-h-cmyk_highres.jpg';
   $file_local_abs = DRUPAL_ROOT . '/' . $image_styled_url;
 
   $image_styled_url_full = 'http://businessvoipcenter.com/' . $image_styled_url;
@@ -1186,7 +1186,7 @@ function bvc_misc_testPage() {
   
   
   /*
-  $to_delete = 'sites/default/files/styles/article_thumbnail_side_block/public/xo.gif';// 'sites/default/files/styles/article_thumbnail_h/public/viatalk_vs_vonage.jpg';
+  $to_delete = 'f/styles/article_thumbnail_side_block/public/xo.gif';// 'f/styles/article_thumbnail_h/public/viatalk_vs_vonage.jpg';
   
   if (file_exists($to_delete)) {
     dpm($to_delete);
@@ -1888,7 +1888,7 @@ function bvc_misc_url_outbound_alter(&$path, &$options, $original_path) {
     $path = 'voip-phone-submit-user-review';
   }
   elseif (preg_match('|^sites\/default\/files\/pdfs\/(.*)|', $path, $matches)) {
-    //$path = 'sites/default/files/pdfs/voipe911-advisory.pdf';
+    //$path = 'f/pdfs/voipe911-advisory.pdf';
     $path = 'pdfs/' . $matches[1];
   }
   
@@ -1918,7 +1918,7 @@ function bvc_misc_url_inbound_alter(&$path, $original_path, $path_language) {
 //  }
 //  elseif (preg_match('|^pdfs\/(.*)|', $path, $matches)) {
 //    //$path = 'pdfs/voipe911-advisory.pdf';
-//    $path = 'sites/default/files/pdfs/' . $matches[1];
+//    $path = 'f/pdfs/' . $matches[1];
 //    //$path = '';
 //  }
 }
@@ -1976,15 +1976,15 @@ function bvc_misc_process_html(&$vars) {
 
     RewriteRule ^images/theme/(.*) sites/all/themes/bvc/css/images/$1
 
-    RewriteRule ^images/logos/sprites/(.*) sites/default/files/p/$1
-    RewriteRule ^images/logos/chart/(.*) sites/default/files/styles/logo_provider_chart_main/public/p/logos/$1
-    RewriteRule ^images/logos/page/(.*) sites/default/files/styles/logo_provider_page/public/p/logos/$1
-    RewriteRule ^images/providerwebsite/(.*) sites/default/files/styles/image_provider_page/public/p/images/$1
-    RewriteRule ^images/logos/featured-in/(.*) sites/default/files/styles/as_featured_in_sideblock/public/a/$1
-    RewriteRule ^images/thumb-h/(.*) sites/default/files/styles/article_thumbnail_h/public/$1
-    RewriteRule ^images/thumb-v/(.*) sites/default/files/styles/article_thumbnail_v/public/$1
-    RewriteRule ^images/thumb-related/(.*) sites/default/files/styles/related_article_thumb_sideblock/public/$1
-    RewriteRule ^images/posts/(.*) sites/default/files/$1
+    RewriteRule ^images/logos/sprites/(.*) f/p/$1
+    RewriteRule ^images/logos/chart/(.*) f/styles/logo_provider_chart_main/public/p/logos/$1
+    RewriteRule ^images/logos/page/(.*) f/styles/logo_provider_page/public/p/logos/$1
+    RewriteRule ^images/providerwebsite/(.*) f/styles/image_provider_page/public/p/images/$1
+    RewriteRule ^images/logos/featured-in/(.*) f/styles/as_featured_in_sideblock/public/a/$1
+    RewriteRule ^images/thumb-h/(.*) f/styles/article_thumbnail_h/public/$1
+    RewriteRule ^images/thumb-v/(.*) f/styles/article_thumbnail_v/public/$1
+    RewriteRule ^images/thumb-related/(.*) f/styles/related_article_thumb_sideblock/public/$1
+    RewriteRule ^images/posts/(.*) f/$1
   
   */
   
@@ -2003,31 +2003,31 @@ function bvc_misc_process_html(&$vars) {
     $vars['page'] = preg_replace(
           array(
             '|sites\/default\/files\/([^\/]*\.)|s',
-            # RewriteRule ^images/content/all/(.*) sites/default/files/$1
+            # RewriteRule ^images/content/all/(.*) f/$1
 
             '|sites\/default\/files\/styles\/related_article_thumb_sideblock\/public\/|s',
-            # RewriteRule ^images/content/thumb-related/(.*) sites/default/files/styles/related_article_thumb_sideblock/public/$1
+            # RewriteRule ^images/content/thumb-related/(.*) f/styles/related_article_thumb_sideblock/public/$1
 
             '|sites\/default\/files\/styles\/article_thumbnail_h\/public\/|s',
-            # RewriteRule ^images/content/thumb-h/(.*) sites/default/files/styles/article_thumbnail_h/public/$1
+            # RewriteRule ^images/content/thumb-h/(.*) f/styles/article_thumbnail_h/public/$1
 
             '|sites\/default\/files\/styles\/article_thumbnail_v\/public\/|s',
-            # RewriteRule ^images/content/thumb-v/(.*) sites/default/files/styles/article_thumbnail_v/public/$1
+            # RewriteRule ^images/content/thumb-v/(.*) f/styles/article_thumbnail_v/public/$1
 
             '|sites\/default\/files\/styles\/as_featured_in_sideblock\/public\/a\/|s',
-            # RewriteRule ^images/providers/logos/featured-in/(.*) sites/default/files/styles/as_featured_in_sideblock/public/a/$1
+            # RewriteRule ^images/providers/logos/featured-in/(.*) f/styles/as_featured_in_sideblock/public/a/$1
 
             '|sites\/default\/files\/styles\/logo_provider_page\/public\/p\/logos\/|s',
-            # RewriteRule ^images/providers/logos/page/(.*) sites/default/files/styles/logo_provider_page/public/p/logos/$1
+            # RewriteRule ^images/providers/logos/page/(.*) f/styles/logo_provider_page/public/p/logos/$1
 
             '|sites\/default\/files\/styles\/image_provider_page\/public\/p\/images\/|s',
-            # RewriteRule ^images/providers/site/(.*) sites/default/files/styles/image_provider_page/public/p/images/$1
+            # RewriteRule ^images/providers/site/(.*) f/styles/image_provider_page/public/p/images/$1
 
             '|sites\/default\/files\/p\/|s',
-            # RewriteRule ^images/providers/logos/sprites/(.*) sites/default/files/p/$1
+            # RewriteRule ^images/providers/logos/sprites/(.*) f/p/$1
               
             '|sites\/default\/files\/styles\/logo_provider_chart_main\/public\/p\/logos\/|s',
-            # RewriteRule ^images/providers/logos/chart/(.*) sites/default/files/styles/logo_provider_chart_main/public/p/logos/$1
+            # RewriteRule ^images/providers/logos/chart/(.*) f/styles/logo_provider_chart_main/public/p/logos/$1
             
             '|sites\/all\/themes\/bvc\/css\/images\/|s', 
             # RewriteRule ^images/theme/(.*) sites/all/themes/bvc/css/images/$1
@@ -2115,7 +2115,7 @@ function bvc_misc_css_alter(&$css) {
       );
       
       
-      $target_path_short = 'sites/default/files/css-altered-bvc/' . str_replace('/', '-', $source_fpath_short);
+      $target_path_short = 'f/css-altered-bvc/' . str_replace('/', '-', $source_fpath_short);
       if (file_put_contents(DRUPAL_ROOT . '/' . $target_path_short, $output)) {
         /*
         $bvc_altered_css[$target_path_short] = $css[$source_fpath_short]; 
@@ -4026,38 +4026,38 @@ function bvc_misc_updateArticleExtraData($node, $save_to_node = TRUE, $update_ti
 
 
 /**
- * Rewrite links like /sites/default/files/pdfs/ to alias /pdfs/ (forward) and vise versa and others.
+ * Rewrite links like /f/pdfs/ to alias /pdfs/ (forward) and vise versa and others.
  */
 function bvc_misc_rewriteLinks($type, $data, $direction = 'forward') {
   switch ($type) {
     case 'pdfs':
       if ($direction == 'forward') {
-        // Converts from /sites/default/files/pdfs/ to /pdfs/
+        // Converts from /f/pdfs/ to /pdfs/
         // the real path will be accessible with .htaccess mod_rewrite settings in the root of the site.
 
         // $body = $form_state['values']['body'];
         $body = $data['values']['body'];
         $count1 = $count2 = 0;
         if ($body['und'][0]['value']) {
-          $body['und'][0]['value'] = preg_replace('|"/sites/default/files/pdfs|', '"/pdfs', $body['und'][0]['value'], -1, $count1);
+          $body['und'][0]['value'] = preg_replace('|"/f/pdfs|', '"/pdfs', $body['und'][0]['value'], -1, $count1);
         }
         if ($body['und'][0]['summary']) {
-          $body['und'][0]['summary'] = preg_replace('|/sites/default/files/pdfs|', '"/pdfs', $body['und'][0]['summary'], -1, $count2);
+          $body['und'][0]['summary'] = preg_replace('|/f/pdfs|', '"/pdfs', $body['und'][0]['summary'], -1, $count2);
         }
         if ($count1 + $count2 > 0) {
           return $body;
         }
       }
       else {
-        // Converts from /pdfs/ to /sites/default/files/pdfs/
+        // Converts from /pdfs/ to /f/pdfs/
 
         // $body = $form['body']
         $body = $data['body'];
         if ($body['und'][0]['#default_value']) {
-          $body['und'][0]['#default_value'] = preg_replace('|"/pdfs|', '"/sites/default/files/pdfs', $body['und'][0]['#default_value'], -1);
+          $body['und'][0]['#default_value'] = preg_replace('|"/pdfs|', '"/f/pdfs', $body['und'][0]['#default_value'], -1);
         }
         if ($body['und'][0]['summary']['#default_value']) {
-          $body['und'][0]['summary']['#default_value'] = preg_replace('|"/pdfs|', '"/sites/default/files/pdfs', $body['und'][0]['summary']['#default_value'], -1);
+          $body['und'][0]['summary']['#default_value'] = preg_replace('|"/pdfs|', '"/f/pdfs', $body['und'][0]['summary']['#default_value'], -1);
         }
         return $body;
       }
@@ -5908,15 +5908,15 @@ function bvc_misc_createCachedImageIfNotExists($relative_path, $style_name = NUL
     
     ///watchdog('.....' . $relative_path, ', $_server -------> '. @$_SERVER['REQUEST_URI'] . ' / ' . @$_SERVER['REDIRECT_URL'], NULL, WATCHDOG_WARNING);
     
-    // Find out the style name from 'sites/default/files/styles/logo_provider_chart_main/public/p/logos/Nextiva-Logo2.png';
+    // Find out the style name from 'f/styles/logo_provider_chart_main/public/p/logos/Nextiva-Logo2.png';
     if (!$style_name) {
       $path_part = explode('/styles/', $relative_path);
       $path_part = explode('/public/', $path_part[1]);
       $style_name = $path_part[0];
     }
     $style = image_style_load($style_name);
-    //$styled_file_path = 'sites/default/files/styles/logo_provider_chart_main/public/p/logos/Nextiva-Logo2.png';
-    //$original_file_path = 'sites/default/files/p/logos/Nextiva-Logo.png';
+    //$styled_file_path = 'f/styles/logo_provider_chart_main/public/p/logos/Nextiva-Logo2.png';
+    //$original_file_path = 'f/p/logos/Nextiva-Logo.png';
     $file_path = str_replace('styles/' . $style_name . '/public/', '', $relative_path);
     $source = bvc_misc_getStreamUriFromRelativePath($file_path);
     $destination = image_style_path($style_name, $source);
@@ -6033,7 +6033,7 @@ function bvc_misc_rebuildProvidersLogosSprites($listing_pos_fields = NULL) {
     
   }
   
-  $out_sprite_path = 'sites/default/files/p/';
+  $out_sprite_path = 'f/p/';
   $out_sprite_ext = 'png';
   
   foreach ($input_providers_data as $providers_logos_sprite_name => $providers_logos_sprite) {
@@ -8806,7 +8806,7 @@ function bvc_misc_getProviderLogoFromSprite($nid, $sprite_name, $all_data_quick 
 
   $bvc_providers_sprites = variable_get('bvc_providers_sprites');
   if (isset($bvc_providers_sprites[$sprite_name]['data'][$nid])) {
-    $out_sprite_path = 'sites/default/files/p/';
+    $out_sprite_path = 'f/p/';
     if (!$all_data_quick) {
       $all_data_quick = bvc_misc_getProvidersDataQuick();
     }

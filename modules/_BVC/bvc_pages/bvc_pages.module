@@ -2362,7 +2362,7 @@ function bvc_pages_form_alter(&$form, &$form_state, $form_id) {
         );
         
         
-        // Restore aliased pdfs links, from /pdfs/ to /sites/default/files/pdfs/
+        // Restore aliased pdfs links, from /pdfs/ to /f/pdfs/
         $form['body'] = bvc_misc_rewriteLinks('pdfs', $form, 'back');
         
         // Hide second specific Tags field for news/blog/articles for a corresponding content type.
@@ -5530,7 +5530,7 @@ function bvc_pages_convertBeautifulUrls($direction, $text) {
       $text = preg_replace(
           array(
             //'|sites\/default\/files\/([^\/]*\.)|s',
-            # RewriteRule ^images/posts/(.*) sites/default/files/$1
+            # RewriteRule ^images/posts/(.*) f/$1
             '|images\/posts\/|s',
             
             // Older/previous version, but stillneed to be converted back.
@@ -5556,38 +5556,38 @@ function bvc_pages_convertBeautifulUrls($direction, $text) {
           ), 
           array(
             //'images/posts/$1',
-            'sites/default/files/',
-            # RewriteRule ^images/posts/(.*) sites/default/files/$1
+            'f/',
+            # RewriteRule ^images/posts/(.*) f/$1
             
             // Older/previous version, but stillneed to be converted back.
             //'images/content/all/$1',
-            'sites/default/files/',
-            # RewriteRule ^images/content/all/(.*) sites/default/files/$1
+            'f/',
+            # RewriteRule ^images/content/all/(.*) f/$1
             
               
-            'sites/default/files/styles/related_article_thumb_sideblock/public/',
-            # RewriteRule ^images/content/thumb-related/(.*) sites/default/files/styles/related_article_thumb_sideblock/public/$1
+            'f/styles/related_article_thumb_sideblock/public/',
+            # RewriteRule ^images/content/thumb-related/(.*) f/styles/related_article_thumb_sideblock/public/$1
 
-            'sites/default/files/styles/article_thumbnail_h/public/',
-            # RewriteRule ^images/content/thumb-h/(.*) sites/default/files/styles/article_thumbnail_h/public/$1
+            'f/styles/article_thumbnail_h/public/',
+            # RewriteRule ^images/content/thumb-h/(.*) f/styles/article_thumbnail_h/public/$1
 
-            'sites/default/files/styles/article_thumbnail_v/public/',
-            # RewriteRule ^images/content/thumb-v/(.*) sites/default/files/styles/article_thumbnail_v/public/$1
+            'f/styles/article_thumbnail_v/public/',
+            # RewriteRule ^images/content/thumb-v/(.*) f/styles/article_thumbnail_v/public/$1
 
-            'sites/default/files/styles/as_featured_in_sideblock/public/a/',
-            # RewriteRule ^images/providers/logos/featured-in/(.*) sites/default/files/styles/as_featured_in_sideblock/public/a/$1
+            'f/styles/as_featured_in_sideblock/public/a/',
+            # RewriteRule ^images/providers/logos/featured-in/(.*) f/styles/as_featured_in_sideblock/public/a/$1
 
-            'sites/default/files/styles/logo_provider_page/public/p/logos/',
-            # RewriteRule ^images/providers/logos/page/(.*) sites/default/files/styles/logo_provider_page/public/p/logos/$1
+            'f/styles/logo_provider_page/public/p/logos/',
+            # RewriteRule ^images/providers/logos/page/(.*) f/styles/logo_provider_page/public/p/logos/$1
 
-            'sites/default/files/styles/image_provider_page/public/p/images/',
-            # RewriteRule ^images/providers/site/(.*) sites/default/files/styles/image_provider_page/public/p/images/$1
+            'f/styles/image_provider_page/public/p/images/',
+            # RewriteRule ^images/providers/site/(.*) f/styles/image_provider_page/public/p/images/$1
 
-            'sites/default/files/p/',
-            # RewriteRule ^images/providers/logos/sprites/(.*) sites/default/files/p/$1
+            'f/p/',
+            # RewriteRule ^images/providers/logos/sprites/(.*) f/p/$1
               
-            'sites/default/files/styles/logo_provider_chart_main/public/p/logos/',
-            # RewriteRule ^images/providers/logos/chart/(.*) sites/default/files/styles/logo_provider_chart_main/public/p/logos/$1
+            'f/styles/logo_provider_chart_main/public/p/logos/',
+            # RewriteRule ^images/providers/logos/chart/(.*) f/styles/logo_provider_chart_main/public/p/logos/$1
             
             'sites/all/themes/bvc/css/images/', 
             # RewriteRule ^images/theme/(.*) sites/all/themes/bvc/css/images/$1
@@ -5595,22 +5595,22 @@ function bvc_pages_convertBeautifulUrls($direction, $text) {
               
               
               
-           'sites/default/files/styles/share_wide/public/',
-            # RewriteRule ^images/share-h/(.*) sites/default/files/styles/share_wide/public/$1
+           'f/styles/share_wide/public/',
+            # RewriteRule ^images/share-h/(.*) f/styles/share_wide/public/$1
            
-            'sites/default/files/styles/share_tall/public/',
-            # RewriteRule ^images/share-v/(.*) sites/default/files/styles/share_tall/public/$1
+            'f/styles/share_tall/public/',
+            # RewriteRule ^images/share-v/(.*) f/styles/share_tall/public/$1
               
             
             
-            'sites/default/files/styles/article_thumbnail_side_block/public/',
-            # RewriteRule ^images/thumb-side/(.*) sites/default/files/styles/article_thumbnail_side_block/public/$1
+            'f/styles/article_thumbnail_side_block/public/',
+            # RewriteRule ^images/thumb-side/(.*) f/styles/article_thumbnail_side_block/public/$1
             
-            'sites/default/files/styles/article_thumbnail_home_teaser/public/',
-            # RewriteRule ^images/thumb-home/(.*) sites/default/files/styles/article_thumbnail_home_teaser/public/$1
+            'f/styles/article_thumbnail_home_teaser/public/',
+            # RewriteRule ^images/thumb-home/(.*) f/styles/article_thumbnail_home_teaser/public/$1
               
-            'sites/default/files/styles/block_thumb/public/',
-            # RewriteRule ^images/thumb-block/(.*) sites/default/files/styles/block_thumb/public/$1
+            'f/styles/block_thumb/public/',
+            # RewriteRule ^images/thumb-block/(.*) f/styles/block_thumb/public/$1
             
           ), 
 
@@ -5626,31 +5626,31 @@ function bvc_pages_convertBeautifulUrls($direction, $text) {
       $text = preg_replace(
           array(
             '|sites\/default\/files\/([^\/]*\.)|s',
-            # RewriteRule ^images/content/all/(.*) sites/default/files/$1
+            # RewriteRule ^images/content/all/(.*) f/$1
 
             '|sites\/default\/files\/styles\/related_article_thumb_sideblock\/public\/|s',
-            # RewriteRule ^images/content/thumb-related/(.*) sites/default/files/styles/related_article_thumb_sideblock/public/$1
+            # RewriteRule ^images/content/thumb-related/(.*) f/styles/related_article_thumb_sideblock/public/$1
 
             '|sites\/default\/files\/styles\/article_thumbnail_h\/public\/|s',
-            # RewriteRule ^images/content/thumb-h/(.*) sites/default/files/styles/article_thumbnail_h/public/$1
+            # RewriteRule ^images/content/thumb-h/(.*) f/styles/article_thumbnail_h/public/$1
 
             '|sites\/default\/files\/styles\/article_thumbnail_v\/public\/|s',
-            # RewriteRule ^images/content/thumb-v/(.*) sites/default/files/styles/article_thumbnail_v/public/$1
+            # RewriteRule ^images/content/thumb-v/(.*) f/styles/article_thumbnail_v/public/$1
 
             '|sites\/default\/files\/styles\/as_featured_in_sideblock\/public\/a\/|s',
-            # RewriteRule ^images/providers/logos/featured-in/(.*) sites/default/files/styles/as_featured_in_sideblock/public/a/$1
+            # RewriteRule ^images/providers/logos/featured-in/(.*) f/styles/as_featured_in_sideblock/public/a/$1
 
             '|sites\/default\/files\/styles\/logo_provider_page\/public\/p\/logos\/|s',
-            # RewriteRule ^images/providers/logos/page/(.*) sites/default/files/styles/logo_provider_page/public/p/logos/$1
+            # RewriteRule ^images/providers/logos/page/(.*) f/styles/logo_provider_page/public/p/logos/$1
 
             '|sites\/default\/files\/styles\/image_provider_page\/public\/p\/images\/|s',
-            # RewriteRule ^images/providers/site/(.*) sites/default/files/styles/image_provider_page/public/p/images/$1
+            # RewriteRule ^images/providers/site/(.*) f/styles/image_provider_page/public/p/images/$1
 
             '|sites\/default\/files\/p\/|s',
-            # RewriteRule ^images/providers/logos/sprites/(.*) sites/default/files/p/$1
+            # RewriteRule ^images/providers/logos/sprites/(.*) f/p/$1
               
             '|sites\/default\/files\/styles\/logo_provider_chart_main\/public\/p\/logos\/|s',
-            # RewriteRule ^images/providers/logos/chart/(.*) sites/default/files/styles/logo_provider_chart_main/public/p/logos/$1
+            # RewriteRule ^images/providers/logos/chart/(.*) f/styles/logo_provider_chart_main/public/p/logos/$1
             
             '|sites\/all\/themes\/bvc\/css\/images\/|s', 
             # RewriteRule ^images/theme/(.*) sites/all/themes/bvc/css/images/$1
@@ -5658,21 +5658,21 @@ function bvc_pages_convertBeautifulUrls($direction, $text) {
               
               
             '|sites\/default\/files\/styles\/share_wide\/public\/|s',
-            # RewriteRule ^images/share-h/(.*) sites/default/files/styles/share_wide/public/$1
+            # RewriteRule ^images/share-h/(.*) f/styles/share_wide/public/$1
                 
             '|sites\/default\/files\/styles\/share_tall\/public\/|s',
-            # RewriteRule ^images/share-v/(.*) sites/default/files/styles/share_tall/public/$1
+            # RewriteRule ^images/share-v/(.*) f/styles/share_tall/public/$1
               
               
               
             '|sites\/default\/files\/styles\/article_thumbnail_side_block\/public\/|s',
-            # RewriteRule ^images/thumb-side/(.*) sites/default/files/styles/article_thumbnail_side_block/public/$1
+            # RewriteRule ^images/thumb-side/(.*) f/styles/article_thumbnail_side_block/public/$1
             
             '|sites\/default\/files\/styles\/article_thumbnail_home_teaser\/public\/|s',
-            # RewriteRule ^images/thumb-home/(.*) sites/default/files/styles/article_thumbnail_home_teaser/public/$1
+            # RewriteRule ^images/thumb-home/(.*) f/styles/article_thumbnail_home_teaser/public/$1
               
             '|sites\/default\/files\/styles\/block_thumb\/public\/|s',
-            # RewriteRule ^images/thumb-block/(.*) sites/default/files/styles/block_thumb/public/$1
+            # RewriteRule ^images/thumb-block/(.*) f/styles/block_thumb/public/$1
               
           ), 
           array(
@@ -5786,7 +5786,7 @@ function bvc_pages_validateForm_article(&$form, &$form_state) {
   }
   form_set_value($form[$target_field], $tags, $form_state);
   
-  // Replace real links /sites/default/files/pdfs/ with /pdfs/
+  // Replace real links /f/pdfs/ with /pdfs/
 //  global $user;
 //  if ($user->uid == 1 && $new_body = bvc_misc_rewriteLinks('pdfs', $form_state)) {
 //    form_set_value($form['body'], $new_body, $form_state);
