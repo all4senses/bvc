@@ -5427,7 +5427,7 @@ function bvc_misc_makeRequest_ajax() {
     
     $status = TRUE;
     
-    watchdog('Quote request ', 'xxx', NULL, WATCHDOG_WARNING);
+    //watchdog('Quote request ', 'xxx', NULL, WATCHDOG_WARNING);
     
     if ($post['source'] == 'block') {
       
