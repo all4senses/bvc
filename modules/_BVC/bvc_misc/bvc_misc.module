@@ -5527,7 +5527,7 @@ function bvc_misc_makeRequest_ajax() {
     
   }
 
-  watchdog('Quote request ', 'output = '. $output, NULL, WATCHDOG_WARNING);
+  //watchdog('Quote request ', 'output = '. $output, NULL, WATCHDOG_WARNING);
   
   drupal_json_output(array('status' => $status, 'data' => $output/*, 'post' => $_POST, 'token' => $post['token'], 'test_token' => $test_token, 'valid_token' => $valid_token, 'letter' => $letter*/));
 }
