@@ -24,15 +24,15 @@
 
           <div id="bvc-logo">
             <?php 
-              echo '<div class="logo"><img src="/sites/all/themes/bvc/css/images/get-voip-logo5.png" alt="businessvoipcenter.com" title="businessvoipcenter.com" /></div>'; 
+              //echo '<div class="logo"><img src="/sites/all/themes/bvc/css/images/get-voip-logo5.png" alt="businessvoipcenter.com" title="businessvoipcenter.com" /></div>'; 
             ?>
             <!--<div class="ps"><span>Over 100,000 Quotes Delivered</span> Average business savings of $240/mo</div> -->
             
-            <section id="block-bvc-blocks-shopperapproved-badge" class="block block-bvc-blocks contextual-links-region odd first">
+            <!--<section id="block-bvc-blocks-shopperapproved-badge" class="block block-bvc-blocks contextual-links-region odd first">
               <div class="content">
                 <a href="http://www.shopperapproved.com/reviews/businessvoipcenter.com/" onclick="var nonwin=navigator.appName!= 'Microsoft Internet Explorer'?'yes':'no'; var certheight=screen.availHeight-90; window.open(this.href,'shopperapproved','location='+nonwin+',scrollbars=yes,width=620,height='+certheight+',menubar=no,toolbar=no'); return false; "><img src="https://c683207.ssl.cf2.rackcdn.com/12265-r.gif" style="border: 0" alt="" oncontextmenu="var d = new Date(); alert('Copying Prohibited by Law - This image and all included logos are copyrighted by Shopper Approved � '+d.getFullYear()+'.'); return false;"></a> 
               </div>
-            </section>
+            </section> -->
             
           </div>
         
