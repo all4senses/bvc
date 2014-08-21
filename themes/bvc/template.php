@@ -782,8 +782,11 @@ function bvc_process_page(&$variables) {
   // Add js to pages.
   
   // set a user referer on every page.
-  $module_path_misc = drupal_get_path('module', 'bvc_misc');
-  drupal_add_js( $module_path_misc . '/js/bvc_setReferer.js'); 
+  if ($variables['node']->type != 'quote') {
+    $module_path_misc = drupal_get_path('module', 'bvc_misc');
+    drupal_add_js( $module_path_misc . '/js/bvc_setReferer.js'); 
+  }
+  
   
   //drupal_add_js( $module_path_misc . '/js/bvc_add_adroll.js'); 
   //drupal_add_js( $module_path_misc . '/js/bvc_add_fb.js'); 
