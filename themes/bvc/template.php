@@ -794,17 +794,17 @@ function bvc_process_page(&$variables) {
   //dpm($_SERVER);
   //dpm($_GET);
   
-  $pages_with_livechatinc = array(/*'/', */ /*'/business',*/ '/hosted-pbx', '/business-systems', '/sip-trunking');
-  if (in_array(@$_SERVER['REQUEST_URI'], $pages_with_livechatinc)) {
-    //dpm('REQUEST_URI = ' . @$_SERVER['REQUEST_URI']);
-    
-    global $user;
-    // Don't show chat for the root.
-    if ($user->uid != 1) {
-      drupal_add_js( $module_path_misc . '/js/bvc_add_livechatinc.js'); 
-    }
-  }
-  
+//  $pages_with_livechatinc = array(/*'/', */ /*'/business',*/ '/hosted-pbx', '/business-systems', '/sip-trunking');
+//  if (in_array(@$_SERVER['REQUEST_URI'], $pages_with_livechatinc)) {
+//    //dpm('REQUEST_URI = ' . @$_SERVER['REQUEST_URI']);
+//    
+//    global $user;
+//    // Don't show chat for the root.
+//    if ($user->uid != 1) {
+//      drupal_add_js( $module_path_misc . '/js/bvc_add_livechatinc.js'); 
+//    }
+//  }
+
   // JS for comparing providers functionality on pages wehere appropriate views are cached and therefore have not loaded js itselves within views.
   $pages_with_compare_provider_functionality = array('/providers/reviews');
   if (/*$_SERVER['REQUEST_URI'] == '/' || */in_array(@$_SERVER['REDIRECT_URL'], $pages_with_compare_provider_functionality)) {
@@ -812,10 +812,10 @@ function bvc_process_page(&$variables) {
     drupal_add_js( $module_path_pages . '/js/bvc_compareProviders.js'); 
   }
   
-  if ($_SERVER['REQUEST_URI'] == '/') {
-    $module_path_pages = drupal_get_path('module', 'bvc_misc');
-    drupal_add_js( $module_path_pages . '/js/bvc_scrollToAnchor_onClick.js'); 
-  }
+//  if ($_SERVER['REQUEST_URI'] == '/') {
+//    $module_path_pages = drupal_get_path('module', 'bvc_misc');
+//    drupal_add_js( $module_path_pages . '/js/bvc_scrollToAnchor_onClick.js'); 
+//  }
   
   /* Add Google's fonts */
   //bvc_misc_addMetatag('stylesheet', NULL, 'http://fonts.googleapis.com/css?family=Open+Sans', 'NA', 'text/css');
@@ -830,7 +830,7 @@ function bvc_process_page(&$variables) {
   // bvc_misc_addMetatag('stylesheet', NULL, 'http://fonts.googleapis.com/css?family=Open+Sans:normal,bold|Ubuntu:500', 'NA', 'text/css');
   // 
   // hr_misc_addMetatag('stylesheet', NULL, 'http://fonts.googleapis.com/css?family=Open+Sans:normal,bold|Ubuntu:500|Roboto:500|Raleway:300,500,700', 'NA', 'text/css');
-  bvc_misc_addMetatag('stylesheet', NULL, 'http://fonts.googleapis.com/css?family=Raleway:300,500,600,700', 'NA', 'text/css');
+  bvc_misc_addMetatag('stylesheet', NULL, 'http://fonts.googleapis.com/css?family=Raleway:300,500,600,700|Open+Sans:400,700', 'NA', 'text/css');
   
   
   // Local fonts, taken from the remote side.  
