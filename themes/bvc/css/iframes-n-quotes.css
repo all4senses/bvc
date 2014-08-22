@@ -1440,7 +1440,7 @@ body.quote-page.v7 .messages{width: 980px; margin: auto; position: relative;}
  
 .node-type-quote #v7 #verisign {background: url(/sites/all/themes/bvc/css/images/lp-sprite-1.png) no-repeat -120px -92px transparent; position: absolute; width: 115px; height: 60px; top: -35px; right: -4px;}
 
-.node-type-quote #v7 .right.final {text-align: center;}
+.node-type-quote #v7 .right.final {text-align: center; padding-top: 60px;}
 .node-type-quote #v7 .right.final .quote-final {font-size: 14px; width: 300px; margin: auto;}
 .node-type-quote #v7 .right.final .quote-final p {line-height: 25px;}
 
