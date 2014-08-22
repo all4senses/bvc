@@ -223,7 +223,7 @@
             <!--<h1>We identify and rank the best business VoIP providers and phone systems.</h1>-->
 
             <div class="quotes one">
-              <div class="text"><span></span>BusinessVoIPcenter stands out in the business VoIP implementation space by providing expert analysis and unparalleled information along with hands-on reviews and feature explanations, which ultimately translates into an easy to setup and manage phone system.<div></div></div>
+              <div class="text"><span></span>"BusinessVoIPCenter.com stands out in the business telephony space by providing expert analysis and unparalleled offers along with easy to understand comparisons.<div></div></div>
               <div class="source"><span class="image"></span><div>Chris Rabbu</div> VP of Marketing at Vonage, Inc.</div>
             </div>
             <div class="bottom-clear"></div> 
@@ -247,7 +247,7 @@
 
 
           <div class="c"><!--businessvoipcenter.com is an independent VoIP service comparison guide, offering unbiased personalized quotes and exclusive reports.-->
-            <div>© 2014 businessvoipcenter.com | All Rights Reserved</div>
+            <div>© 2014 BusinessVoIPCenter.com | All Rights Reserved</div>
           </div>
 
         </div>
