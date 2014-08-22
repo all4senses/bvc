@@ -274,15 +274,14 @@
 
           <?php /*if ($_SERVER['HTTP_REFERER'] == 'http://businessvoipcenter.com/service-quotes'):*/  /* If we get the final page from the main quote page, what is correct.*/ ?> 
             
-            <!-- Google Code for BVC Lead - LP Conversion Page -->
+            <!-- Google Code for BVC - LP Conversion Page -->
             <script type="text/javascript">
             /* <![CDATA[ */
             var google_conversion_id = 944838791;
             var google_conversion_language = "en";
-            var google_conversion_format = "2";
+            var google_conversion_format = "3";
             var google_conversion_color = "ffffff";
-            var google_conversion_label = "cXd0CMHGnAYQh7HEwgM";
-            var google_conversion_value = 0;
+            var google_conversion_label = "2eEsCLfc_VUQh7HEwgM";
             var google_remarketing_only = false;
             /* ]]> */
             </script>
@@ -290,9 +289,10 @@
             </script>
             <noscript>
             <div style="display:inline;">
-            <img height="1" width="1" style="border-style:none;" alt="" src="//www.googleadservices.com/pagead/conversion/944838791/?value=0&amp;label=cXd0CMHGnAYQh7HEwgM&amp;guid=ON&amp;script=0"/>
+            <img height="1" width="1" style="border-style:none;" alt="" src="//www.googleadservices.com/pagead/conversion/944838791/?label=2eEsCLfc_VUQh7HEwgM&amp;guid=ON&amp;script=0"/>
             </div>
             </noscript>
+
             
             <!-- inserted by me on 21.01.2014 -->
             <script type="text/javascript"> if (!window.mstag) mstag = {loadTag : function(){},time : (new Date()).getTime()};</script> <script id="mstag_tops" type="text/javascript" src="//flex.msn.com/mstag/site/b2106e00-2863-40e4-844c-f95b8ba90d29/mstag.js"></script> <script type="text/javascript"> mstag.loadTag("analytics", {dedup:"1",domainId:"1856373",type:"1",actionid:"210748"})</script> 
