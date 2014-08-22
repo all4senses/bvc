@@ -24,7 +24,7 @@
 
           <div id="bvc-logo">
             <?php 
-              //echo '<div class="logo"><img src="/sites/all/themes/bvc/css/images/get-voip-logo5.png" alt="businessvoipcenter.com" title="businessvoipcenter.com" /></div>'; 
+              echo '<div class="logo"><img src="/sites/all/themes/bvc/css/images/businessvoipcenter-logo.jpg" alt="businessvoipcenter.com logo" title="BusinessVoIPcenter.com" /></div>'; 
             ?>
             <!--<div class="ps"><span>Over 100,000 Quotes Delivered</span> Average business savings of $240/mo</div> -->
             
