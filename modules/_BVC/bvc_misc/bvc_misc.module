@@ -942,7 +942,7 @@ function bvc_misc_testPage() {
   
      $post = array(
         'source' => 'partner',
-        'version' => 'partner_name_unique',
+        'version' => 'partner_name_unique_BVC',
         'goal' => 'quote',
         'token' => 'getvoip_partner',
         'phones_amt' => '1 - 4',
