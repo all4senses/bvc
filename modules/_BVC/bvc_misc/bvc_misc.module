@@ -6306,9 +6306,9 @@ function bvc_misc_SendRequestTo8x8($submission, $op = 'sendIfAllowed') {
       
   // Set initial fields.
   $data_to = array(
-    'lead_source' => 'LG-BusinessVoIPcenter',
+    'lead_source' => 'LG-GetVoIP',
     'oid' => '00D300000006Mvt', 
-    'retURL' =>  'http://go.8x8.com/getvoip', //'http://businessvoipcenter.com',
+    'retURL' =>  'http://go.8x8.com/getvoip', //'http://getvoip.com',
       
     'Campaign_ID' => '70150000000fg2g', //'70150000000g8vF',
     'member_status' => 'Responded',
