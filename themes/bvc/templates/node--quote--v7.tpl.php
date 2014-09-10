@@ -85,7 +85,7 @@
           
           
           
-          
+              <!--
               <div style="display: none;">
                 <div id="exitIntent"> 
                   <div id="line-1">Do You Want To Save BIG On</div>
@@ -97,6 +97,7 @@
                   <div id="no">NO - I like overpaying for my old phone service.</div>
                 </div>
               </div>
+              -->
           
               <?php
               
@@ -210,7 +211,8 @@
                   echo '</ul>';
                 }
                 */
-                echo '<img src="/sites/all/themes/bvc/css/images/lp-slider-logos-v7.png" alt="Supported by Major VoIP Brands" />';
+                echo '<img src="/sites/all/themes/bvc/css/images/lp-slider-logos-v7.png" alt="Supported by Major VoIP Brands" />,'
+            .       '<div class="brands s1"><div class="brands s2"><div class="brands s3">';
 
             ?>
 
