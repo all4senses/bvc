@@ -1574,6 +1574,12 @@ border-bottom-right-radius: 0;
 
 .node-type-quote #v7 #brands h2{font-size: 17px; margin: 0 0 0 45px; padding: 0; color: #c1c1c1; font-weight: normal; text-align: left; font-family: arial; text-shadow: none;}
 
+
+
+.brands2 {background: url(/images/theme/lp-sprite-1.png) no-repeat 45px -15px transparent; width: 340px; height: 80px; float: left;}
+.brands2.s2 {background-position: 50px -150px;}
+.brands2.s1 {background-position: 15px -230px; width: 300px;}
+
 .node-type-quote #v7 .brands {}
 .node-type-quote #v7 .brands.s1 {}
 .node-type-quote #v7 .brands.s2 {}
