@@ -753,7 +753,7 @@ function bvc_process_page(&$variables) {
   
   if(isset($variables['node'])) {
     $variables['theme_hook_suggestions'][] = 'page__' . $variables['node']->type;
-    
+    /*
     if ($variables['node']->type == 'preface') {
       $pages_with_separate_tpl = array('page-compare-business-voip-providers', 'page-compare-pbx-voip-providers', 'page-compare-residential-voip-providers', 'page-compare-sip-voip-providers', 'page-compare-cc-voip-providers', 'view-reviews-page_all_reviews', 'page-reseller-providers', 'page-compare-ifa-voip-providers', 'web-conferencing-voip-providers');
       if (in_array(@$variables['node']->field_preface_key['und'][0]['value'], $pages_with_separate_tpl) && arg(2) != 'edit') {
@@ -761,7 +761,9 @@ function bvc_process_page(&$variables) {
       }
     }
             
-    elseif ($variables['node']->type == 'quote') {
+    else
+      */
+      if ($variables['node']->type == 'quote') {
       drupal_add_css(path_to_theme() . '/css/iframes-n-quotes.css', array('group' => CSS_DEFAULT, 'every_page' => TRUE));
     }
     
@@ -782,11 +784,12 @@ function bvc_process_page(&$variables) {
   // Add js to pages.
   
   // set a user referer on every page.
+  /*
   if (@$variables['node']->type != 'quote') {
     $module_path_misc = drupal_get_path('module', 'bvc_misc');
     drupal_add_js( $module_path_misc . '/js/bvc_setReferer.js'); 
   }
-  
+  */
   
   //drupal_add_js( $module_path_misc . '/js/bvc_add_adroll.js'); 
   //drupal_add_js( $module_path_misc . '/js/bvc_add_fb.js'); 
@@ -806,12 +809,13 @@ function bvc_process_page(&$variables) {
 //  }
 
   // JS for comparing providers functionality on pages wehere appropriate views are cached and therefore have not loaded js itselves within views.
+  /*
   $pages_with_compare_provider_functionality = array('/providers/reviews');
-  if (/*$_SERVER['REQUEST_URI'] == '/' || */in_array(@$_SERVER['REDIRECT_URL'], $pages_with_compare_provider_functionality)) {
+  if (in_array(@$_SERVER['REDIRECT_URL'], $pages_with_compare_provider_functionality)) {
     $module_path_pages = drupal_get_path('module', 'bvc_misc');
     drupal_add_js( $module_path_pages . '/js/bvc_compareProviders.js'); 
   }
-  
+  */
 //  if ($_SERVER['REQUEST_URI'] == '/') {
 //    $module_path_pages = drupal_get_path('module', 'bvc_misc');
 //    drupal_add_js( $module_path_pages . '/js/bvc_scrollToAnchor_onClick.js'); 
@@ -837,10 +841,10 @@ function bvc_process_page(&$variables) {
   // Commented out here and moved to style.css
   ////drupal_add_css('sites/all/libraries/fonts/google/open-sans-n-ubuntu/fonts.css', array('group' => /*CSS_DEFAULT*/CSS_THEME, 'every_page' => TRUE)); // array('group' => CSS_THEME, 'preprocess' => FALSE)
 
-  drupal_add_css('sites/all/libraries/fonts/other/fonts_other.css', array('group' => /*CSS_DEFAULT*/CSS_THEME, 'every_page' => TRUE)); // array('group' => CSS_THEME, 'preprocess' => FALSE)
+  ///////drupal_add_css('sites/all/libraries/fonts/other/fonts_other.css', array('group' => /*CSS_DEFAULT*/CSS_THEME, 'every_page' => TRUE)); // array('group' => CSS_THEME, 'preprocess' => FALSE)
   //
   // Add the font-awesome icons font.
-  drupal_add_css('sites/all/libraries/fonts/font-awesome/css/font-awesome.min.css', array('group' => /*CSS_DEFAULT*/CSS_THEME, 'every_page' => TRUE)); // array('group' => CSS_THEME, 'preprocess' => FALSE)
+  /////drupal_add_css('sites/all/libraries/fonts/font-awesome/css/font-awesome.min.css', array('group' => /*CSS_DEFAULT*/CSS_THEME, 'every_page' => TRUE)); // array('group' => CSS_THEME, 'preprocess' => FALSE)
 
   // Adding this css will break a little bit a styling on the page!
 //  global $user;
@@ -853,10 +857,10 @@ function bvc_process_page(&$variables) {
   
   
     // Set NoIndex tag for some paginated main articles and user pages.
-    $pages_to_noindex = array('blog', 'news', 'library');
-    if ( (in_array($_GET['q'], $pages_to_noindex) || strpos($_SERVER['REQUEST_URI'], 'staff/')) && !empty($_GET['page']) ) {
-      bvc_misc_addMetatag('robots', 'noindex');
-    }
+//    $pages_to_noindex = array('blog', 'news', 'library');
+//    if ( (in_array($_GET['q'], $pages_to_noindex) || strpos($_SERVER['REQUEST_URI'], 'staff/')) && !empty($_GET['page']) ) {
+//      bvc_misc_addMetatag('robots', 'noindex');
+//    }
     
   
 }
@@ -873,20 +877,24 @@ function bvc_preprocess_node(&$variables) {
   if(isset($variables['node'])) {
     
     global $user;
-    
+    /*
     if($variables['node']->type == 'blog_post' || $variables['node']->type == 'news_post') {
       $variables['theme_hook_suggestions'][] = 'node__article';
     }
-    elseif($variables['node']->type == 'webform') {
+    else
+      */
+      if($variables['node']->type == 'webform') {
       $variables['theme_hook_suggestions'][] = 'node__admin_page';
     }
     
     
     
     
-    elseif($variables['node']->type == 'quote') {
+    else
+      if($variables['node']->type == 'quote') {
     
             global $body_classes_add;
+            /*
             if($variables['node']->title == 'Request a Quote page v9' || $variables['node']->title == 'Request a Quote page v9 Final') {
                 $body_classes_add['quote_page'] = 'quote-page v9';
                 $variables['theme_hook_suggestions'][] = 'node__quote__v9';
@@ -899,7 +907,9 @@ function bvc_preprocess_node(&$variables) {
                 $body_classes_add['quote_page'] = 'quote-page v8 uk';
                 $variables['theme_hook_suggestions'][] = 'node__quote__v8_uk';
             }
-            elseif($variables['node']->title == 'Request a Quote page v7' || $variables['node']->title == 'Request a Quote page v7 Final') {
+            else
+              */
+              if($variables['node']->title == 'Request a Quote page v7' || $variables['node']->title == 'Request a Quote page v7 Final') {
                 $body_classes_add['quote_page'] = 'quote-page v7';
                 $variables['theme_hook_suggestions'][] = 'node__quote__v7';
             }
@@ -907,6 +917,7 @@ function bvc_preprocess_node(&$variables) {
                 $body_classes_add['quote_page'] = 'quote-page v7 uk';
                 $variables['theme_hook_suggestions'][] = 'node__quote__v7_uk';
             }
+            /*
             elseif($variables['node']->title == 'Request a Quote page v3' || $variables['node']->title == 'Request a Quote page v3 Final') {
                 $body_classes_add['quote_page'] = 'quote-page v33';
                 $variables['theme_hook_suggestions'][] = 'node__quote__v33';
@@ -926,7 +937,7 @@ function bvc_preprocess_node(&$variables) {
             elseif($variables['node']->title == 'Request a Quote page v2' || $variables['node']->title == 'Request a Quote page v2 Final') {
               $variables['theme_hook_suggestions'][] = 'node__quote__v2';
             }
-
+            */
     
     }
     
